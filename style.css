@@ -1,0 +1,45 @@
+body{
+	background: #772953; /* Old browsers */
+background: -moz-linear-gradient(45deg, #772953 29%, #e95420 74%, #e95420 74%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #772953 29%,#e95420 74%,#e95420 74%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #772953 29%,#e95420 74%,#e95420 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#772953', endColorstr='#e95420',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.mainSideNav{
+	background-color: rgba(51, 51, 51, 0.2);
+	float: left;
+	height: 100%;
+	width: 120px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.mainSideNav ul {
+	padding: 8px 0 0 0;
+	list-style: none;
+	text-align:center;
+	display:block;
+}
+
+.spanBlock{
+	text-align:center;
+	color: white; 
+	display:block;
+	border: thin silver solid;
+	float: bottom;
+
+}
+
+.mainSideNav ul li:hover{
+	background: #ddd;
+	color:#000;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}
+
+
