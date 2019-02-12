@@ -6,8 +6,9 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#772953', endColorstr='#e95420', GradientType=1);
 	margin: 0;
 }
+/*task bar*/
 .taskBar {
-	background-color: rgb(94, 39, 80);
+	background-color: rgba(51, 51, 51, 0.3);
 	overflow: hidden;
 	width: 100%;
 	position: relative;
@@ -18,22 +19,27 @@ body {
 	padding: 0;
 	list-style: none;
 	display: flex;
+	color: white;
+	font-size: 20px;
 }
 
-#Activities1 {
+#activities1 {
+	flex: .15;
 }
-#Windows2 {
+#windows2 {
+	flex: .8;
 }
-#Time3 {
+#time {
+	flex: 1;
 }
-#Battery4 {
+#battery4 {
 }
-
+/*side nav bar*/
 .mainSideNav {
-	background-color: rgba(51, 51, 51, 0.2);
+	background-color: rgb(94, 39, 80, .2);
 	float: left;
 	height: 100%;
-	width: 120px;
+	width: 80px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -55,7 +61,55 @@ body {
 	background: #ddd;
 	color: #000;
 }
+/*icons*/
 .icon {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
+}
+/*modal windows*/
+.dragResizeWindow {
+	display: none;
+	position: absolute;
+	z-index: 9;
+	height: 200px;
+	width: 200px;
+	min-width: 170px;
+	resize: both;
+	overflow: auto;
+	background-color: #411934;
+	border: thin solid black;
+	font-family: 'Ubuntu Mono', monospace;
+	color: #fff;
+}
+
+.dragResizeWindowheader {
+	padding: 10px;
+	cursor: move;
+	z-index: 10;
+	background-color: rgb(51, 51, 51);
+	color: rgb(255, 255, 255);
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+}
+
+#root {
+	color: rgb(50, 205, 50);
+}
+
+#dash {
+	color: rgb(0, 255, 255);
+}
+
+#terminalButton {
+	border-radius: 8px;
+	border: none;
+	margin: 0;
+	padding: 1px 5px;
+	background-color: rgb(237, 118, 77);
+	float: right;
+}
+
+#terminalButton:hover {
+	background: rgb(242, 152, 121);
+	background: linear-gradient(to bottom, rgb(242, 152, 121) 0%, rgb(237, 118, 77) 100%);
 }

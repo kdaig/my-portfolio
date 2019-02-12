@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>protfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<!-- Task Bar -->
 	<div class="taskBar">
 		<ul class="container">
-			<li id="Activities1">Activities1</li>
-			<li id="Windows2">Terminal2</li>
-			<li id="Time3">Time3</li>
-			<li id="Battery4">Battery4</li>
+			<li id="activities1">Activities1</li>
+			<li id="windows2">Terminal2</li>
+			<li id="time">Time</li>
+			<li id="battery4">Battery4</li>
 		</ul>
 	</div>
-	
+	<!--Side Nav Bar -->
 	<div class="mainSideNav">
 			<ul>
-				<li><img class="icon" src="./images/terminal.png"><span class="spanBlock">Terminal</span></li>
+				<li id="TerminalIcon"><img class="icon" src="./images/terminal.png"><span class="spanBlock">Terminal</span></li>
 				<li><img class="icon" src="./images/books.png"><span class="spanBlock">Title Zone</span></li>
-				<li><img class="icon" src="./images/cards.png"><span class="spanBlock">Matching Game</span></li>
 				<li><img class="icon" src="./images/contact.png"><span class="spanBlock">Contact</span></li>
 				<li><img class="icon" src="./images/linkedin.png"><span class="spanBlock">Linkdin</span></li>
 				<li><img class="icon" src="./images/github.png"><span class="spanBlock">Github</span></li>
 				<li><img class="icon" src="./images/recycling.png"><span class="spanBlock">Recycling</span></li>
 			</ul>
 	</div>
+	<!-- Modal Windows -->
+	<div class="dragResizeWindow">
+		<div class="dragResizeWindowheader">kdaig@kdaig:~
+			<button id="terminalButton">x</button>
+		</div>
+		<p><span id='root'>kdaig@kdaig</span>:<span id='dash'>~</span>$ Welcome.
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis a dolores odit, in non deleniti, rerum quos eos,
+			officiis vero ad consectetur et quam culpa nemo animi ea repellat assumenda?
+		</p>
+	</div>
+	<script src="scripts.js"></script>
 </body>
 </html>
